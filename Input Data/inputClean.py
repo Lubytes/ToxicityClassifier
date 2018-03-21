@@ -20,7 +20,7 @@ regexIPs = re.compile(r"[\d]+\.[\d]+\.[\d]+\.[\d]+", re.IGNORECASE)
 regexURLHelper = re.compile(r"(?<=\/)\s(?=\w)|(?<=\w)\s(?=\/)|(?<=:)\s(?=\/)", re.IGNORECASE) 
 regexURL = re.compile(r"((http[s]?|ftp):\/)\/([^:\/\s]+)((\/\w+)*[\/]?)([\w\-\.]+[^#?\s]+)", re.IGNORECASE)
 # White-listed characters
-regexWhiteList = re.compile(r"[^A-Za-z0-9 -]") 
+regexWhiteList = re.compile(r"[^A-Za-z0-9 ]") 
 
 
 # Open original training data
@@ -35,6 +35,7 @@ with open('train.csv', encoding="utf8", newline='') as csvfile:
         row[1] = regexIPs.sub("",row[1])
         row[1] = regexPuncSpace.sub(" ",row[1])
         row[1] = regexPunc.sub("",row[1])
+        row[1] = row[1].replace("-"," ")
         row[1] = regexWhiteList.sub("",row[1])
         data.append(row)
 
