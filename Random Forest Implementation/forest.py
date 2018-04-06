@@ -2,12 +2,27 @@
 # Author:   Brandon Poole
 # Date:     March 19th, 2018
 # Purpose:  Random Forest implementation with GloVe
+#           to predict toxicity of Wikipedia comments
 
 import csv
 import sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix
+
+import numpy as np
+np.seterr(divide='ignore', invalid='ignore')
+
+def calcRates(matrix):
+    print("Accuracy:")
+    print((matrix[0]+matrix[3])/(matrix[0]+matrix[1]+matrix[2]+matrix[3]))
+    print("Sensitivity:")
+    print((matrix[3])/(matrix[2]+matrix[3]))
+    print("Specificity:")
+    print((matrix[0])/(matrix[0]+matrix[1]))
+    print("Precision:")
+    print((matrix[3])/(matrix[3]+matrix[1]))
+
 
 
 # Make dictionaries out of vectors
@@ -61,15 +76,102 @@ with open('../Input Data/train-edited.csv', encoding="utf8", newline='') as csvf
 
 # === Random Forest Implementation ===
 
-#Model Selection splitter for evaluation
+MAXDEPTH = 10
+print(MAXDEPTH)
+#Toxicitiy
+print("Toxic Tree")
 X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, toxic, test_size=0.33, random_state=42)
 
-clf = RandomForestClassifier(max_depth=2, random_state=0)
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
 clf.fit(X_train, y_train)
 
 # Evaluation
 
 testData = clf.predict(X_test)
-print(confusion_matrix(y_test, testData))
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
+print("\n\n")
+
+
+#Severly Toxic
+print("Severly Toxic Tree")
+X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, severeToxic, test_size=0.33, random_state=42)
+
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
+clf.fit(X_train, y_train)
+
+# Evaluation
+
+testData = clf.predict(X_test)
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
+print("\n\n")
+
+#Obscene
+print("Obscene Tree")
+X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, obscene, test_size=0.33, random_state=42)
+
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
+clf.fit(X_train, y_train)
+
+# Evaluation
+
+testData = clf.predict(X_test)
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
+print("\n\n")
+
+#Obscene
+print("Threat Tree")
+X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, threat, test_size=0.33, random_state=42)
+
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
+clf.fit(X_train, y_train)
+
+# Evaluation
+
+testData = clf.predict(X_test)
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
+print("\n\n")
+
+#Obscene
+print("Insult Tree")
+X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, insult, test_size=0.33, random_state=42)
+
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
+clf.fit(X_train, y_train)
+
+# Evaluation
+
+testData = clf.predict(X_test)
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
+print("\n\n")
+
+#Obscene
+print("Identity Hate Tree")
+X_train, X_test, y_train, y_test = train_test_split(sentenceToVector, identityHate, test_size=0.33, random_state=42)
+
+clf = RandomForestClassifier(max_depth=MAXDEPTH, random_state=0)
+clf.fit(X_train, y_train)
+
+# Evaluation
+
+testData = clf.predict(X_test)
+print("(tn, fp, fn, tp)")
+matrix = confusion_matrix(y_test, testData).ravel()
+print(matrix)
+calcRates(matrix)
 
 

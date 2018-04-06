@@ -1,0 +1,755 @@
+=====================================
+Depth = 2
+Toxic Tree
+(tn, fp, fn, tp)
+[47442    10  5027    93]
+Accuracy:
+0.9041885414288975
+Sensitivity:
+0.0181640625
+Specificity:
+0.999789260726629
+Precision:
+0.9029126213592233
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52054     0   518     0]
+Accuracy:
+0.9901468462299323
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49763     0  2809     0]
+Accuracy:
+0.9465685155596135
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49937     0  2635     0]
+Accuracy:
+0.9498782621928022
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52079     0   493     0]
+Accuracy:
+0.9906223845392985
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+=====================================
+
+depth = 3
+Toxic Tree
+(tn, fp, fn, tp)
+[47340   112  4563   557]
+Accuracy:
+0.9110743361485201
+Sensitivity:
+0.1087890625
+Specificity:
+0.997639720138245
+Precision:
+0.8325859491778774
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52053     1   513     5]
+Accuracy:
+0.9902229323594309
+Sensitivity:
+0.009652509652509652
+Specificity:
+0.9999807891804664
+Precision:
+0.8333333333333334
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49760     3  2788    21]
+Accuracy:
+0.9469109031423572
+Sensitivity:
+0.007475970096119616
+Specificity:
+0.9999397142455237
+Precision:
+0.875
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49927    10  2563    72]
+Accuracy:
+0.9510575972000305
+Sensitivity:
+0.02732447817836812
+Specificity:
+0.9997997476820795
+Precision:
+0.8780487804878049
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52079     0   493     0]
+Accuracy:
+0.9906223845392985
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+===========================
+
+depth = 4
+Toxic Tree
+(tn, fp, fn, tp)
+[47198   254  4004  1116]
+Accuracy:
+0.9190063151487484
+Sensitivity:
+0.21796875
+Specificity:
+0.9946472224563769
+Precision:
+0.8145985401459854
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52051     3   507    11]
+Accuracy:
+0.9902990184889294
+Sensitivity:
+0.021235521235521235
+Specificity:
+0.9999423675413993
+Precision:
+0.7857142857142857
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49705    58  2413   396]
+Accuracy:
+0.9529977935022446
+Sensitivity:
+0.1409754360982556
+Specificity:
+0.9988344754134598
+Precision:
+0.8722466960352423
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49872    65  2280   355]
+Accuracy:
+0.9553945065814502
+Sensitivity:
+0.1347248576850095
+Specificity:
+0.9986983599335162
+Precision:
+0.8452380952380952
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52079     0   492     1]
+Accuracy:
+0.9906414060716732
+Sensitivity:
+0.002028397565922921
+Specificity:
+1.0
+Precision:
+1.0
+===================================
+depth = 5
+Toxic Tree
+(tn, fp, fn, tp)
+[47159   293  3797  1323]
+Accuracy:
+0.9222019325876892
+Sensitivity:
+0.2583984375
+Specificity:
+0.9938253392902301
+Precision:
+0.8186881188118812
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52038    16   479    39]
+Accuracy:
+0.9905843414745492
+Sensitivity:
+0.07528957528957529
+Specificity:
+0.999692626887463
+Precision:
+0.7090909090909091
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49688    75  2243   566]
+Accuracy:
+0.9559080879555657
+Sensitivity:
+0.20149519401922392
+Specificity:
+0.9984928561380946
+Precision:
+0.8829953198127926
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49861    76  2174   461]
+Accuracy:
+0.9572015521570417
+Sensitivity:
+0.17495256166982923
+Specificity:
+0.9984780823838036
+Precision:
+0.8584729981378026
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52079     0   490     3]
+Accuracy:
+0.9906794491364225
+Sensitivity:
+0.006085192697768763
+Specificity:
+1.0
+Precision:
+1.0
+======================================
+depth = 6
+Toxic Tree
+(tn, fp, fn, tp)
+[47221   231  3721  1399]
+Accuracy:
+0.9248269040553907
+Sensitivity:
+0.2732421875
+Specificity:
+0.9951319227851302
+Precision:
+0.8582822085889571
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52037    17   476    42]
+Accuracy:
+0.9906223845392985
+Sensitivity:
+0.08108108108108109
+Specificity:
+0.9996734160679295
+Precision:
+0.711864406779661
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49653   110  2137   672]
+Accuracy:
+0.9572586167541657
+Sensitivity:
+0.2392310430758277
+Specificity:
+0.997789522335872
+Precision:
+0.8593350383631714
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49816   121  2036   599]
+Accuracy:
+0.9589705546678841
+Sensitivity:
+0.22732447817836812
+Specificity:
+0.997576946953161
+Precision:
+0.8319444444444445
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52079     0   490     3]
+Accuracy:
+0.9906794491364225
+Sensitivity:
+0.006085192697768763
+Specificity:
+1.0
+Precision:
+1.0
+==================================
+depth = 7
+Toxic Tree
+(tn, fp, fn, tp)
+[47158   294  3620  1500]
+Accuracy:
+0.9255497222856274
+Sensitivity:
+0.29296875
+Specificity:
+0.993804265362893
+Precision:
+0.8361204013377926
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52023    31   470    48]
+Accuracy:
+0.9904702122803013
+Sensitivity:
+0.09266409266409266
+Specificity:
+0.9994044645944596
+Precision:
+0.6075949367088608
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49621   142  2003   806]
+Accuracy:
+0.9591988130563798
+Sensitivity:
+0.28693485226059096
+Specificity:
+0.9971464742881258
+Precision:
+0.8502109704641351
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49787   150  1952   683]
+Accuracy:
+0.9600167389484897
+Sensitivity:
+0.25920303605313094
+Specificity:
+0.9969962152311913
+Precision:
+0.8199279711884754
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52078     1   490     3]
+Accuracy:
+0.9906604276040478
+Sensitivity:
+0.006085192697768763
+Specificity:
+0.999980798402427
+Precision:
+0.75
+===================================
+depth = 8
+Toxic Tree
+(tn, fp, fn, tp)
+[47175   277  3531  1589]
+Accuracy:
+0.9275660047173401
+Sensitivity:
+0.3103515625
+Specificity:
+0.9941625221276237
+Precision:
+0.8515541264737406
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52016    38   460    58]
+Accuracy:
+0.9905272768774253
+Sensitivity:
+0.11196911196911197
+Specificity:
+0.9992699888577247
+Precision:
+0.6041666666666666
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49602   161  1965   844]
+Accuracy:
+0.9595602221714982
+Sensitivity:
+0.3004627981488074
+Specificity:
+0.9967646645097763
+Precision:
+0.8398009950248756
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   171     0]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.0
+Specificity:
+1.0
+Precision:
+nan
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49766   171  1881   754]
+Accuracy:
+0.9609678155672221
+Sensitivity:
+0.2861480075901328
+Specificity:
+0.9965756853635581
+Precision:
+0.8151351351351351
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52076     3   487     6]
+Accuracy:
+0.9906794491364225
+Sensitivity:
+0.012170385395537525
+Specificity:
+0.9999423952072812
+Precision:
+0.6666666666666666
+=================================
+Depth = 9
+Toxic Tree
+(tn, fp, fn, tp)
+[47126   326  3389  1731]
+Accuracy:
+0.9293350072281823
+Sensitivity:
+0.3380859375
+Specificity:
+0.9931298996881058
+Precision:
+0.8415167719980554
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[52006    48   459    59]
+Accuracy:
+0.9903560830860534
+Sensitivity:
+0.1138996138996139
+Specificity:
+0.999077880662389
+Precision:
+0.5514018691588785
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49576   187  1892   917]
+Accuracy:
+0.9604542341931066
+Sensitivity:
+0.3264506941972232
+Specificity:
+0.9962421879709824
+Precision:
+0.8306159420289855
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52400     1   170     1]
+Accuracy:
+0.9967473179639351
+Sensitivity:
+0.005847953216374269
+Specificity:
+0.9999809163947253
+Precision:
+0.5
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49735   202  1853   782]
+Accuracy:
+0.9609107509700981
+Sensitivity:
+0.2967741935483871
+Specificity:
+0.9959549031780043
+Precision:
+0.7947154471544715
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52076     3   486     7]
+Accuracy:
+0.9906984706687971
+Sensitivity:
+0.014198782961460446
+Specificity:
+0.9999423952072812
+Precision:
+0.7
+===========================
+Depth = 10
+Toxic Tree
+(tn, fp, fn, tp)
+[47059   393  3239  1881]
+Accuracy:
+0.9309137944152781
+Sensitivity:
+0.3673828125
+Specificity:
+0.9917179465565202
+Precision:
+0.8271767810026385
+
+
+
+Severly Toxic Tree
+(tn, fp, fn, tp)
+[51992    62   453    65]
+Accuracy:
+0.9902039108270563
+Sensitivity:
+0.12548262548262548
+Specificity:
+0.9988089291889192
+Precision:
+0.5118110236220472
+
+
+
+Obscene Tree
+(tn, fp, fn, tp)
+[49554   209  1861   948]
+Accuracy:
+0.9606254279844785
+Sensitivity:
+0.3374866500533998
+Specificity:
+0.9958000924381568
+Precision:
+0.8193604148660328
+
+
+
+Threat Tree
+(tn, fp, fn, tp)
+[52401     0   170     1]
+Accuracy:
+0.9967663394963098
+Sensitivity:
+0.005847953216374269
+Specificity:
+1.0
+Precision:
+1.0
+
+
+
+Insult Tree
+(tn, fp, fn, tp)
+[49690   247  1776   859]
+Accuracy:
+0.9615194400060869
+Sensitivity:
+0.32599620493358633
+Specificity:
+0.9950537677473617
+Precision:
+0.7766726943942134
+
+
+
+Identity Hate Tree
+(tn, fp, fn, tp)
+[52067    12   484     9]
+Accuracy:
+0.9905653199421746
+Sensitivity:
+0.018255578093306288
+Specificity:
+0.999769580829125
+Precision:
+0.42857142857142855
+
+
+
+
+
+
