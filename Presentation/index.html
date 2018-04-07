@@ -42,6 +42,7 @@
 						<h2>Agenda</h2>
 						<div style="width: 48%; float: left">
 							<ul>
+								<li class="fragment">The Data</li>
 								<li class="fragment">Testing &amp; Training Data Manipulation</li>
 								<div class="fragment">
 									<li>Random Forest Implementation</li>
@@ -61,10 +62,188 @@
 				</section>
 				<section>
 					<section>
+						<h2>Background</h2>
+					</section>
+					<section>
+						<h3>The Competition</h3>
+						<ul>
+							<li>Classification of Wikipedia comments based on levels of toxicity</li>
+							<li>Project based on Kaggle competition initiated by Google Brain team</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Unintended Bias</h3>
+						<ul>
+							<li>Major problem in filtering out online comments</li>
+							<li>Context not always taken into account</li>
+							<li>Racial/Gendered/Sexual Orientation identifiers get associated with toxic comments</li>
+						</ul>
+					</section>
+					
+				</section>
+				<section>
+					<section>
 						<h2>The Data</h2>
 					</section>
 					<section>
-						<h3>second slide</h3>
+						<h3>The Specifics</h3>
+						<ul>
+							<li><strong>From:</strong> Toxic Comment Classification Challenge</li>
+							<li><strong>Format:</strong> .csv File</li>
+							<li><strong># of Classifications:</strong> 6</li>
+							<li><strong>Amount:</strong></li>
+							<ul>
+								<li>159,572 lines of training data</li>
+								<li>153,165 lines of non-classified testing data</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h3>Filtering out Bias</h3>
+						<ul>
+							<li>Add non-toxic labeled comments to the data set</li>
+							<li>Greater emphasis on context</li>
+							<li>Use of machine learning and data mining tools</li>
+						</ul>
+					</section>
+					<section>
+							<h3>Weight Redistribution</h3>
+							<table style="width:100%">
+								<tr>
+								  <th>Word</th>
+								  <th>% Non-toxic</th> 
+								  <th>% Toxic</th>
+								</tr>
+								<tr>
+								  <td>gay</td>
+								  <td>43</td> 
+								  <td>57</td>
+								</tr>
+								<tr>
+								  <td>lesbian</td>
+								  <td>68</td> 
+								  <td>32</td>
+								</tr>
+								<tr>
+									<td>black</td>
+									<td>86</td> 
+									<td>14</td>
+								  </tr>
+							  </table>
+						</section>
+				</section>
+				<section>
+					<section>
+						<h2>Data Manipulation</h2>
+					</section>
+					<section>
+						<h3>Step 1 - Regex Select</h3>
+						<img src="/css/img/inputCleanRegex.JPG" alt="Input Clean Regex">
+					</section>
+					<section>
+						<h3>Step 2 - Regex Execution</h3>
+						<img src="/css/img/inputCleanRegexUse.JPG" alt="Input Clean Regex Use">
+					</section>
+					<section>
+						<h3>Step 3 - Dependant on Implementation</h3>
+					</section>
+					
+				</section>
+				<section>
+					<section>
+						<h2>Random Forest</h2>
+					</section>
+					<section>
+							<h3>Step 1 - GloVe</h3>
+							<blockquote cite="https://nlp.stanford.edu/projects/glove/">
+								&ldquo;A Stanford unsupervised learning algorithm for obtaining vector representations for words. &rdquo;
+							</blockquote>
+						</section>
+						<section>
+							<h3>Step 2 - Dictionary</h3>
+							<br>
+							<table style="width:100%">
+								<tr>
+									<th>Word</th>
+									<th>Vector</th> 
+								</tr>
+								<tr>
+									<td>the</td>
+									<td>[-0.550, -0.271, ... , 0.142, -1.139]</td> 
+								</tr>
+								<tr>
+									<td>to</td>
+									<td>[ 0.325,  0.400, ... ,-0.740, -1.341]</td> 
+								</tr>
+								<tr>
+									<td>of</td>
+									<td>[ 0.966,  0.579, ... , 0.038, -2.754]</td> 
+								</tr>
+								<tr>
+									<td>and</td>
+									<td>[ 0.129, 0.663, ... , -0.302, -1.382]</td> 
+								</tr>	 
+							</table>
+						</section>
+						<section>
+							<h3>Step 3 - Comments -> Vecs</h3>
+							<ul>
+								<li><strong>Example comment:</strong> I hate you </li>
+								<li><strong>Example vectors:</strong> </li>
+								<ul>
+									<li>[-0.550, -0.271, ... , 0.142, -1.139]</li>
+									<li>[ 0.325,  0.400, ... ,-0.740, -1.341]</li>
+									<li>[ 0.966,  0.579, ... , 0.038, -2.754]</li>
+								</ul>
+							</ul>
+						</section>
+						<section>
+							<ul style="list-style-type: none;">
+								<li><strong>Example Vector Comment:</strong> </li>
+								<br>
+								<ul style="list-style-type: none;">
+									<li>[-0.550, -0.271, ... , 0.142, -1.139]</li>
+									<li>+</li>
+									<li>[ 0.325,  0.400, ... ,-0.740, -1.341]</li>
+									<li>+</li>
+									<li>[ 0.966,  0.579, ... , 0.038, -2.754]</li>
+									<li>_____________________________________</li>
+									<li>[ 0.741,  0.708, ... , -0.560, -5.234]</li>
+								</ul>
+							</ul>
+						</section>
+						<section>
+							<h2>Step 4</h2>
+							<h3>The Testing Problem</h3>
+							<p>33 / 66</p>
+						</section>
+						<section>
+							<h3>Tree Depth</h3>
+							<div style="width: 48%; float: left">
+								<img src="/css/img/sensitivityTreeDepth.JPG" alt="Input Clean Regex Use">
+							</div>
+							<div style="width: 48%; float: right">
+								<img src="/css/img/precisionTreeDepth.JPG" alt="Input Clean Regex Use">
+							</div>
+						</section>
+						<section>
+							
+						</section>
+				</section>
+				<section>
+					<section>
+						<h2>Recursive Neural Network</h2>
+					</section>
+					<section>
+						<h3>The Implementation</h3>
+						<ul>
+							<li>Use of Recurrent Neural Network to classify new comments</li>
+							<li>Built using TensorFlow, Pandas, NumPy libraries</li>
+							<li>Tuning of hyperparameters is difficult</li>
+						</ul>
+					</section>
+					<section>
+						<p>process &amp; results here</p>
 					</section>
 				</section>
 				
