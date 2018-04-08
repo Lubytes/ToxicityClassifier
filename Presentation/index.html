@@ -30,7 +30,7 @@
 					<h2>Toxicity Classification</h1>
 					<h5>Wikipedia Comments: Helpful vs. Hateful</h3>
 					<p>
-						<small><a href="https://www.linkedin.com/in/brandon-at-dal/">Brandon Poole</a> - <a href="#">Jason Parsons</a> - <a href="#">Sasha Startsev</a></small>
+						<small><a href="https://www.linkedin.com/in/brandon-at-dal/">Brandon Poole</a> - <a href="#">Jason Parsons</a> - <a href="#">Alexandra Startsev</a></small>
 					</p>
 
 					<aside class="notes">
@@ -42,8 +42,13 @@
 						<h2>Agenda</h2>
 						<div style="width: 48%; float: left">
 							<ul>
+								<li class="fragment">Background</li>
 								<li class="fragment">The Data</li>
 								<li class="fragment">Testing &amp; Training Data Manipulation</li>
+							</ul>
+						</div>
+						<div style="width: 48%; float: right" >
+							<ul>
 								<div class="fragment">
 									<li>Random Forest Implementation</li>
 									<ul>
@@ -51,11 +56,14 @@
 										<li>Evaluation</li>
 									</ul>
 								</div>
-							</ul>
-						</div>
-						<div style="width: 48%; float: right" >
-							<ul>
-								<li class="fragment">Jason &amp; Sasha stuff here</li>
+								<div class="fragment">
+									<li>RNN Implementation</li>
+									<ul>
+										<li>Word2Vec</li>
+										<li>Evaluation</li>
+									</ul>
+								</div>
+								<li class="fragment">Future Work</li>
 							</ul>
 						</div>
 					</section>
@@ -225,9 +233,11 @@
 							<div style="width: 48%; float: right">
 								<img src="/css/img/precisionTreeDepth.JPG" alt="Input Clean Regex Use">
 							</div>
-						</section>
-						<section>
-							
+							<div class="fragment" style="clear:both">
+								<p></p>
+								<p>Toxic: 8 | S. Toxic: 6 | Obscene: 5</p>
+								<p>Threat: 9 | Insult: 5 | Hate: 6</p>
+							</div>
 						</section>
 				</section>
 				<section>
@@ -243,7 +253,47 @@
 						</ul>
 					</section>
 					<section>
-						<p>process &amp; results here</p>
+						<h3>Construction</h3>
+						<ul>
+							<li>Use Pandas library to read in training and test sets</li>
+						</ul>
+						<img src="/css/img/RNNConstruct.PNG" alt="Input Clean Regex Use">
+					</section>
+					<section>
+						<h3>Construction (Cont'd)</h3>
+						<ul>
+							<li>Check for null values in data set using isNull()</li>
+							<li>Split the comments and the class labels</li>
+						</ul>
+						<img src="/css/img/RNNSplit.PNG" alt="Input Clean Regex Use">
+					</section>
+					<section>
+						<h3>Construction (Cont'd)</h3>
+						<ul>
+							<li>TensorFlow used to train the model</li>
+							<li>Also attempted to use Pandas to create dictionary from comments</li>
+							<li>Use of Word2Vec to vectorize comments</li>
+							<li>Tune the hyperparameters and test using the test data set</li>
+						</ul>
+					</section>
+					<section>
+						<h3>RNN Results</h3>
+						<ul>
+							<li>The RNN classifier is still a work in progress</li>
+							<li>Difficulty due to complexity of RNN model</li>
+							<li>Lack of any formal training with RNN’s</li>
+							<li>Consensus from experts is that tuning the hyperparameters is non-trivial</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Future Work</h2>
+						<ul>
+							<li>Continue to research RNN’s from NLP perspective</li>
+							<li>Comprehensively test Random Forest Implementation</li>
+							<li>Study methods used by other teams in Kaggle competition</li>
+						</ul>
 					</section>
 				</section>
 				
