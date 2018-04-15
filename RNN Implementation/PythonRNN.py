@@ -41,6 +41,11 @@ feed_dict = {train_inputs: trainComments, train_labels: y}
 
 init = tf.global_variables_initializer()
 
+#Unfortunately my Word2Vec implementation to vectorize the comments is
+#not producing the desired results and I have been unable to resolve the
+#issue in time before the end of the project. Steps for further work
+#to resolve the issue can be found in the final project report.
+
 
 
 
